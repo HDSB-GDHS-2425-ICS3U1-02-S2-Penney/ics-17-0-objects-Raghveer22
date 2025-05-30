@@ -15,12 +15,20 @@ function init() {
 /**** OBJECT CREATION FUNCTIONS ****/
 
 // Write the circle object function here
-
+function circle(x, y, color) {
+  this.x =x;
+  this.y = y;
+  this.color = color;
+}
 
 
 // Write the createCircle function here. 
-
-
+function createCircle(){
+ctx.beginPath();
+ctx.arc(10, 10, 10, 0, 2 * Math.PI);             
+ctx.fillStyle = "white";
+ctx.fill();
+}
 
 // Write the randomInteger function here. 
 
